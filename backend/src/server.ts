@@ -24,7 +24,7 @@ class Server extends http.Server {
 
   public async start(): Promise<http.Server> {
     this.app.set('port', config.PORT);
-    this.setDatabase();
+    // this.setDatabase();
     this.setMiddleware();
     return this.app.listen(this.app.get('port'), () => {
       console.log(`server : http://localhost:${this.app.get('port')}`);

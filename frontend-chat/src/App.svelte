@@ -1,10 +1,11 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  import WorkspaceList from './components/WorkspaceList.svelte'
+  import TailwindCss from './TailwindCSS.svelte';
 </script>
 
-<main>
-
+<main class="w-full container border-2 border-solid border-gray-700 h-full overflow-hidden">
+  <TailwindCss />
+<WorkspaceList/>
 </main>
 
 <style>

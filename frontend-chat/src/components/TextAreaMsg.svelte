@@ -17,11 +17,11 @@
   };
 </script>
 
-<div class=" flex-1 bg-gray-300 p-3 flex flex-col">
+<div class=" flex-1 bg-gray-300 p-3 flex flex-col h-full">
   <div class="flex-1 flex flex-col i">
     <h6 class="uppercase bg-slate-600 text-gray-100 p-2">history msg</h6>
 
-    <div class="bg-gray-100 flex-1 p-4 flex-col justify-end">
+    <div class="bg-gray-100 flex-1 p-4 flex-col justify-end overflow-auto">
       <div class="flex flex-col my-6">
         <div class="flex flex-wrap">
           <h6 class="font-bold px-2">Michal Jakis</h6>

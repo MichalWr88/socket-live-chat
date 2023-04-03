@@ -1,17 +1,25 @@
 <script lang="ts">
   import RoomsList from "./components/RoomsList.svelte";
   import TextAreaMsg from "./components/TextAreaMsg.svelte";
+  import UserInfo from "./components/UserInfo.svelte";
   import WorkspaceList from "./components/WorkspaceList.svelte";
   import TailwindCss from "./TailwindCSS.svelte";
 </script>
 
+<TailwindCss />
+<header>
+  <div class="flex">
+    <UserInfo />
+  </div>
+</header>
 <main
-  class="w-full container border-2 border-solid border-gray-700 h-full overflow-hidden flex"
+  class=" container border-2 border-solid border-gray-700 h-full overflow-hidden flex flex-col"
 >
-  <TailwindCss />
-  <WorkspaceList />
-  <RoomsList />
-  <TextAreaMsg />
+  <div class="flex flex-1">
+    <WorkspaceList />
+    <RoomsList />
+    <TextAreaMsg />
+  </div>
 </main>
 
 <style>
